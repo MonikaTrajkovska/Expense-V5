@@ -118,17 +118,6 @@ class Products extends React.Component {
   //funkcii za edit product 
 
   doneEdit = (_id) => {
-    // alert('TEST');
-    //  console.log(this.props);
-    //  console.log('***************************************');
-    // console.log(this.props._id,
-    //    this.props.product_name,
-    //    this.props.product_type,
-    //   this.props.product_description,
-    //   this.props.purchase_date,
-    //    this.props.product_price);
-    // console.log('***************************************');
-
     var item = this.props.items.filter((v, i) => {
       if (v._id === _id) {
         return v;
@@ -137,23 +126,11 @@ class Products extends React.Component {
     })
 
     console.log(item[0]);
-
-    //  store.dispatch(
-
     this.props.editOneItem(item[0]);
 
-    //  store.dispatch(true)
+   
 
   }
-  //    edit(e){
-  //      var id=e.target.getAttribute('data-key')
-  //     store.dispatch({
-  //       type:"UPDATE_ITEM",
-  //       id:id
-  //      })
-  //     this.props.history.push('/edit/'+id)
-  //  }
-
 
   render() {
 
@@ -173,8 +150,6 @@ class Products extends React.Component {
 
               <Link to={`/updateproduct/${item._id}`}>
                 <span id="edit" className="far fa-edit" onClick={() => { this.doneEdit(item._id) }}></span>
-
-
               </Link>
               <span id="delete" className="far fa-trash-alt" onClick={() => this.delete(item._id)}> </span>
             </td>

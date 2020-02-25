@@ -15,7 +15,6 @@ class Expenses extends React.Component {
         this.state = {
             monthFilter: false,
             yearFilter: true,
-            // toggle: true,
             refilter: null,
             Update: false
         }
@@ -25,7 +24,7 @@ class Expenses extends React.Component {
         this.setState({
             yearFilter: true,
             monthFilter: false,
-            // toggle: true
+          
         })
     }
 
@@ -33,7 +32,7 @@ class Expenses extends React.Component {
         this.setState({
             yearFilter: false,
             monthFilter: true,
-            // toggle: false
+      
         })
     }
 
@@ -80,7 +79,7 @@ class Expenses extends React.Component {
                     .catch(err => {
                         console.log(err)
                     })
-            } else {  ///date.length ===7
+            } else {  
                 let fromDate = new Date(`${date}-01 00:00:00.000`).getTime();
                 let toDate = new Date(`${date}-31 23:59:59.000`).getTime();
                 axios.get(`http://localhost:8084/api/v1/items?date_from=${fromDate}&date_to=${toDate}&sort=purchase_date:desc`,
@@ -125,9 +124,9 @@ class Expenses extends React.Component {
                 <h3>Expenses</h3>
                 <div className="expense4">
                     <button className="yearly-btn4" onClick={this.yearFilter}>Yearly</button>
-                    {/* {this.state.toggle ? "yearly-btn4" : "yearly-btn4"}  */}
+                   
                     <button className="monthly-btn4" onClick={this.monthFilter}>MONTHLY</button>
-                    {/* {!this.state.toggle ? "monthly-btn4" : "monthly-btn4"} */}
+                   
                     {this.state.monthFilter ?
                         <p id="box-container">
                             <label htmlFor="filter4">Choose Month </label>

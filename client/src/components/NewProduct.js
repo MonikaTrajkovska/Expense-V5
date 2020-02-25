@@ -8,9 +8,6 @@ import { Update } from '../redux/actions/itemsActions'
 import './New product.css'
 
 
-
-
-
 class NewProduct extends React.Component {
     constructor(props) {
         super(props)
@@ -126,7 +123,7 @@ class NewProduct extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.itemsReducer.items,
+     items: state.itemsReducer.items,
      newProduct: state.itemsReducer.newProduct
     }
 }

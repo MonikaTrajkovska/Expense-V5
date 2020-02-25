@@ -113,14 +113,14 @@ import './Register.css'
                  </p>
                  <p className="input-container1">
                      <label className="text-field-input1">Country</label>
-                    <input type="text" className="text-field1"id='country' onChange={this.saveValue}  />
+                     <input type="text" className="text-field1"id='country' onChange={this.saveValue}  />
                  </p>
                             
                     <p className="input-container1">
                         <label className="text-field-input1">Password</label>
                         <input type="password" className="text-field1" id='password' onChange={this.saveValue}/>
                           </p>      
-                          <button className="primary-button1" type="submit" onClick={this.register}>Register</button>
+                <button className="primary-button1" type="submit" onClick={this.register}>Register</button>
                         </form>
                          </div>
                           

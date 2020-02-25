@@ -12,12 +12,12 @@ export const deleteItem = (_id) => {
         payload: _id
     }
 }
-export const getTotalPrice = (price) => {
-    return {
-        type: "GET_TOTAL_PRICE",
-        payload: price
-    }
-}
+// export const getTotalPrice = (price) => {
+//     return {
+//         type: "GET_TOTAL_PRICE",
+//         payload: price
+//     }
+// }
 export function Update(item) {
     return {
         type: 'UPDATE',

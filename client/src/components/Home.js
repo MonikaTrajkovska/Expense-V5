@@ -9,7 +9,6 @@ const Home = () => {
         <React.Fragment>
         
         <p className='expenseCalculator'>EXPENSE CALCULATOR</p>
-        
         <div className="paragraph">
         <h4 className='paragraph1'>See where your money goes</h4>
         <h4 className='paragraph2'>Simple App to start Saving More</h4>
