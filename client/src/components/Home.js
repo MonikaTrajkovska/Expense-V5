@@ -24,7 +24,7 @@ const Home = () => {
         </p>
          <p className='btn'> Or 
         
-         <Link to='/'>
+         <Link to='/login'>
          <button className="main-buttons" id="expenses-btn">LOG IN</button> </Link></p>
          </div>
         </React.Fragment>

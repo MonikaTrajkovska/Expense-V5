@@ -22,7 +22,7 @@ const Header = () => {
             <img src={Profile} alt="Profile"  id='profile3'/>
             
             </div>
-            <Link to='/home' className="logOutButton3"  onClick={logout}>Log out</Link>
+            <Link to='/' className="logOutButton3"  onClick={logout}>Log out</Link>
            
         </nav>
         </header> 

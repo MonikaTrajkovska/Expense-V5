@@ -102,20 +102,7 @@ class Expenses extends React.Component {
         for (let i = 0; i < this.props.items.length; i++) {
             totalAmount += this.props.items[i].product_price
         }
-        // Za options na selectbox od Year
-        //  let today = new Date();
-        //  let year = today.getFullYear();
-        // let selectOptions= []
-        // for (let i = 2000; i <= year; i++) {
-
-        // selectOptions.push(<option key={i} value={i}>{i}</option>)
-        //  }
-        //  selectOptions.reverse();
-
-        // let selectOptions=['2000', '2001, '2002', '2003', '2004', '2005', '2006', '2007',
-        //  '2008', '2009', '2010', '2001']
-        // let today= new Date()
-        // let selectOptions=today.getFullYear()
+        
 
 
         return (

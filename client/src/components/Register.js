@@ -126,7 +126,7 @@ import './Register.css'
                           
                                   
                  <div className="additional-info1"><p>Or if you don't have an account,
-                 <Link to='/'>
+                 <Link to='/login'>
                  <span className="register-login">Sign In</span>
                  </Link>
                 </p>

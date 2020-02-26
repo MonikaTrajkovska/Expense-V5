@@ -29,9 +29,7 @@ export function itemsReducer(state = initialUserState, action) {
 
 
             }
-        // case "GET_TOTAL_PRICE": {
-        //     return { ...state, totalPrice: action.payload }
-        // }
+       
         case 'UPDATE':
             return {
                 ...state,

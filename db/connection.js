@@ -8,7 +8,7 @@ const init = config => {
      useNewUrlParser: true,
       useUnifiedTopology: true,
      useCreateIndex:true,
-    //  useFindAndModify: false
+      useFindAndModify: false
     })
    .then(res => {
      // console.log(res);
